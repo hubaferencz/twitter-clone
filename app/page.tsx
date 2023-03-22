@@ -1,7 +1,20 @@
+import Header from "./components/Header";
+// import Modal from "./components/Modal";
+import LoginModal from "./components/modals/LoginModal";
+import RegisterModal from "./components/modals/RegisterModal";
+
 export default function Home() {
   return (
-    <main>
-      <h1 className="text-3xl font-bold underline">Hello world!</h1>
-    </main>
+    <>
+      <RegisterModal />
+      <LoginModal />
+      <Header showBackArrow label="home" />
+      {/* <Modal
+        isOpen
+        // onClose={() => {}}
+        // onSubmit={() => {}}
+        actionLabel="submit"
+      /> */}
+    </>
   );
 }
